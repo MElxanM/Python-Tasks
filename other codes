@@ -1,0 +1,169 @@
+1)
+
+while True:
+  largest_number=int(input())
+  n=int(input())
+  if n==0:
+      break
+  else:
+    n=int(input())
+    if n>largest_number:
+      largest_number=n
+print('The largest number is: ', largest_number)
+
+2)def power(a,b):
+  print(a**b)
+
+power(5,3)
+
+3)
+def addition(a,b):
+  print(a+b)
+addition(27,29)
+
+4) def introduction(first_name, last_name):
+    print("Hello, my name is", first_name, last_name)
+
+introduction(first_name = "James", last_name = "Bond")
+introduction(last_name = "Skywalker", first_name = "Luke")
+5) def introduction(first_name="John", last_name="Smith"):
+    print("Hello, my name is", first_name, last_name)
+introduction()
+6) def boring_function():
+    return 123
+
+x = boring_function()
+
+print("The boring_function has returned its result. It's:", x)
+print("The boring_function has returned its result. It's:", boring_function())
+
+7)
+def pwr1(a,b):
+  return a**b
+
+def pwr2(a,b):
+  print(a**b)
+
+pwr1(2,3)
+pwr2(2,4)
+
+8)
+def happy_new_year(wishes = True):
+    print("Three...")
+    print("Two...")
+    print("One...")
+    if not wishes:
+        return
+    
+    print("Happy New Year!")
+happy_new_year(False)
+happy_new_year()
+happy_new_year(True)
+
+9)
+i = 5
+while i < 5:
+    print(i)
+    i += 1
+else:
+    print("else:", i)
+    
+10) i = 5
+while i < 5:
+    print(i)
+    i += 1
+else:
+    print("else:", i)
+    
+11) blocks = int(input("Enter the number of blocks: "))
+n=1
+height=1
+
+while blocks>0:
+    blocks=blocks-n
+    n=n+1
+    if n>blocks:
+      break
+    height=height+1
+
+print("The height of the pyramid:", height)
+
+12) n=int(input())
+steps=0
+while n!=1:
+    if n%2==0:
+        n=n/2
+        print(n)
+    else:
+        n=n*3+1
+        print(n)
+    steps=steps+1
+print("steps:", steps)
+
+13) 
+var = 17
+var_right = var >> 1
+var_left = var << 2
+print(var, var_left, var_right)
+
+14)
+hat_list = [1, 2, 3, 4, 5]  # This is an existing list of numbers hidden in the hat.
+n=input()
+hat_list[2]=n
+del hat_list[-1]
+print(len(hat_list))
+
+
+print(hat_list)
+
+15)
+my_list = [10, 1, 8, 3, 5]
+total = 0
+
+for i in range(len(my_list)):
+    total += my_list[i]
+
+print(total)
+
+16) my_list = [10, 1, 8, 3, 5]
+
+my_list[0], my_list[4] = my_list[4], my_list[0]
+my_list[1], my_list[3] = my_list[3], my_list[1]
+
+print(my_list)
+
+17) my_list = [10, 1, 8, 3, 5]
+length = len(my_list)
+
+for i in range(length // 2):
+    my_list[i], my_list[length - i - 1] = my_list[length - i - 1], my_list[i]
+
+print(my_list)
+
+18) my_list = [8, 10, 6, 2, 4]
+my_list.sort()
+print(my_list)
+
+19)
+my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+to_find = 5
+found = False
+
+for i in range(len(my_list)):
+    found = my_list[i] == to_find
+    if found:
+        break
+
+if found:
+    print("Element found at index", i)
+else:
+    print("absent")
+
+20) 
+import numpy as np
+import matplotlib.pyplot as plt
+
+arr = np.array([[-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,1,2,3,4,5,6,7,8,9,10],[1,4,9,16,25,36,49,64,81,100,1,4,9,16,25,36,49,64,81,100]])
+
+plt.scatter(arr[0],arr[1])
+plt.show()
